@@ -8,7 +8,7 @@ steps:
 # Deploy container image to Cloud Run
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     entrypoint: gcloud
-    args: ['run', 'deploy', 'fast-api-test', '--image', 'gcr.io/iron-dynamics-440303-r9/fastapi-app:lastest', '--region', 'us-central1', '--platfrom', 'managed']
+    args: ['run', 'deploy', 'fast-api-test', '--image', 'gcr.io/iron-dynamics-440303-r9/fastapi-app:lastest', '--region', 'us-central1', '--platform', 'managed', --allow-unauthenticated]
 
 images:
   - 'gcr.io/iron-dynamics-440303-r9/fastapi-app:lastest'
